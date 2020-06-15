@@ -1,0 +1,162 @@
+html{
+	
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+hr{
+  
+  border: 1px solid black !important;
+  width: 100%;
+}
+img{
+	width: 100% !important;
+    height: auto !important;
+	padding: 0px !important;
+}
+a,a:hover{
+	text-decoration: none !important;
+}
+section h3{
+	color:#ed5f5f;
+	text-align: center;
+}
+
+header h3,footer h3{
+	font-size: 2vw;
+}
+
+
+.scale{
+	transition-duration: 0.9s;
+	transform-origin: center;
+	z-index: 0;
+}
+.scale:hover{
+	transition-duration: 0.9s;
+	transform: scale(1.1); 
+	z-index: 99;
+}
+
+.z1{
+	z-index: 1 !important;
+}
+
+.nav-item a{
+	transition-duration: 0.4s !important;
+}
+.nav-item a:not(.active):hover{
+	color: #52B9E4 !important;
+	transition-duration: 0.4s !important;
+}
+
+.row{
+	margin-top: 24px;
+}
+.mainCard{
+	min-height: 400px !important;
+}
+.card:not(.rightCol,.noScale){
+	min-height: 320px !important;
+}
+.rightCol,.card,.leftCol{
+	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.1), 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+	transition-duration: 0.4s;
+}
+.rightCol:hover,.card:hover,.leftCol.scale:hover{
+ 	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.1), 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+	transform: scale(1.007); 
+	transition-duration: 0.4s;
+}
+.noScale:hover{
+	transform: scale(1) !important; 
+	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.1), 0 0px 10px 0 rgba(0, 0, 0, 0.2); 
+}
+.stickyTop{
+	
+	position: sticky !important;
+	top:75px !important;
+	
+}
+.sticky-offset {
+    top: 75px !important;
+}
+
+
+@media screen and (max-width: 760px){
+	header h3, footer h3{
+		font-size: 4vw !important;
+	}
+}
+@media screen and (max-width: 767px){
+	.blogItem h3{
+		font-size: 5vw !important;
+		
+	}
+	.blogItem p{
+		display: none;
+	}
+
+
+.scale:hover{
+	transform: scale(1); 	
+}
+
+
+}
+
+@media screen and (max-width: 1100px){
+	.btnText{
+		display: none;
+	}
+
+	
+}
+
+.show{
+
+}
+.dropdown-menu {
+  margin-top: 0px !important;
+}
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}	
+.dropdown-toggle::after {
+   transition: transform 0.15s linear; 
+}
+.dropdown-menu.show{
+	transition: transform 0.3s linear; 
+}
+.dropdown-item:not(.active):hover{
+	background-color: #212529 !important;
+	color:#52B9E4;
+}
+
+.pageTitle{
+	  background-position: center;
+	  background-repeat-y: no-repeat;
+	background-image:url("images/headerImage.jpg");
+}
+
+/*
+
+.fotoCard{
+border-radius: 0px !important;
+padding: 0 !important;
+}
+.fotoCard img{
+	 opacity: 0.5;
+	 border-radius: 0px !important;
+	 margin: 0px !important;
+	 padding: 0px !important;
+	transition-duration: 0.2s; 
+
+}
+.fotoCard img{
+	 opacity: 0.1;
+	transition-duration: 0.3s; 
+}
+*/
